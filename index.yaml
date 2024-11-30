@@ -1,9 +1,130 @@
 apiVersion: v1
 entries:
+  mysql:
+  - annotations:
+      category: Database
+      images: |
+        - name: mysql
+          image: docker.io/bitnami/mysql:8.4.3-debian-12-r4
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.16.0-debian-12-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r33
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.4.3
+    created: "2024-11-30T10:33:53.961548463Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: dde84451897ca28003a4345ce6a8bb1758d381330533b8c2a4dae572f0c424e0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://dineshpatilcloud.github.io/ntmscharts/mysql-12.1.0.tgz
+    version: 12.1.0
+  - annotations:
+      category: Database
+      images: |
+        - name: mysql
+          image: docker.io/bitnami/mysql:8.4.3-debian-12-r4
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.16.0-debian-12-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r33
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.4.3
+    created: "2024-11-30T10:33:53.953813336Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 5245034b60e6a682d6334d9a61093b0338bcd809aabf274ee21bd4c6db8fc0e5
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://dineshpatilcloud.github.io/ntmscharts/mysql-12.0.1.tgz
+    version: 12.0.1
+  - annotations:
+      category: Database
+      images: |
+        - name: mysql
+          image: docker.io/bitnami/mysql:8.4.3-debian-12-r0
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.15.1-debian-12-r35
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r31
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.4.3
+    created: "2024-11-30T10:33:53.947171427Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: ec83d1727343e6ef64cf4186eceb06fac4a447f2393a72984ec293808d244121
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://dineshpatilcloud.github.io/ntmscharts/mysql-12.0.0.tgz
+    version: 12.0.0
   webapp:
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2024-11-30T10:03:29.200437287Z"
+    created: "2024-11-30T10:33:53.964099105Z"
     description: A Helm chart for Kubernetes
     digest: a214c0d03001e056cb3b01e3959b99a905405f178d62ba884125e87aa6e7aa0e
     name: webapp
@@ -13,7 +134,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-30T10:03:29.199008267Z"
+    created: "2024-11-30T10:33:53.962995087Z"
     description: A Helm chart for Kubernetes
     digest: 61ac5226d9555e203f22c8b489594a98823d55b5efe9b4816cd8793eaecb71bc
     name: webapp
@@ -23,7 +144,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-30T10:03:29.198003653Z"
+    created: "2024-11-30T10:33:53.962259775Z"
     description: A Helm chart for Kubernetes
     digest: 6e71541a2dead2215b096d914567dce45dc1fe89be6eb8a3b50f2a999aecda59
     name: webapp
@@ -31,4 +152,4 @@ entries:
     urls:
     - https://dineshpatilcloud.github.io/ntmscharts/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-30T10:03:29.195561918Z"
+generated: "2024-11-30T10:33:53.940877123Z"
